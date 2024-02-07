@@ -1,6 +1,11 @@
-import wall
+from wall import Wall
 
 class Field:
-    def __init__(self, number_walls):
-        self.number_walls = number_walls  # reduce probability of the bullet hitting
-        
+    def __init__(self):
+        self.paredes = []
+    def add_paredes(self, parede):
+        self.paredes.append(parede)
+
+    def quant_paredes(self):
+        print("Quantidade de paredes: ", len(self.paredes))
+
